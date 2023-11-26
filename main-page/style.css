@@ -3,11 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
     background: url(assets/bg.jpg) no-repeat;
 }
-
 #gameName {
     border: none;
     color: rgb(244, 238, 244);
@@ -19,31 +17,35 @@ body {
     border-radius: 4px;
     transition: 0.2s all linear;
 }
-
 #logotipo {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 1000px; /* Ajuste o tamanho conforme necessário */
+    width: 1000px;
     height: 100px;
     background: url('assets/ioiologo.png') no-repeat;
     background-size: contain;
     padding: 10px;
 }
-
 .imagem-container {
     text-align: center;
-    margin-top: 50px; /* Ajuste a margem conforme necessário */
+    margin-top: 50px;
 }
-
 .imagem-container a {
     display: inline-block;
     margin: 10px;
     text-decoration: none;
     color: #333;
 }
-
 .imagem-container img {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 200px;
     height: 200px;
+}
+#gameList {
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 0px 10px 0px 10px;
+    padding: 5px;
+}
+#gameimg:hover {
+    opacity: 0.9;
 }

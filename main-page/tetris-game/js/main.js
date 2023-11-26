@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let timerId;
   let wait = 400;
 
-  audio.play();
-
   const lTetromino = [
     [1, width + 1, width * 2 + 1, 2],
     [width, width + 1, width + 2, width * 2 + 2],
@@ -238,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ];
 
       if (row.every((index) => squares[index].classList.contains("taken"))) {
-        score += 10;
+        score += 10; // armazena aqui, eu acredito.
         scoreDisplay.innerHTML = score;
         row.forEach((index) => {
           squares[index].classList.remove("taken");
